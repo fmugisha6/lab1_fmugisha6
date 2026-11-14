@@ -18,16 +18,6 @@ A pre-built web interface displays the car's journey through Kigali at
 night, while Python handles the driving logic and decision-making.
 ![alt text](image.png)
 
-## Project Objectives
-
--   Understand and apply Python functions.
--   Work with lists and different data types.
--   Apply conditional statements and loops.
--   Handle user input and exceptions.
--   Perform list insertion and replacement operations.
--   Understand basic file handling and logging.
--   Practice Bash scripting through log analysis.
-
 ## Road Simulation Rules
 
 The journey is represented by a Python list called `road`, located in
@@ -244,21 +234,3 @@ and exit with status code `1`.
 -   **HTML** -- Pre-built visual interface.
 -   **Git & GitHub** -- Version control and project management.
 
-## Learning Outcomes
-
-Through this project, I aim to strengthen my understanding of:
-
--   Python functions and modular programming.
--   Lists, indexing, and list manipulation.
--   Conditional statements and loops.
--   Exception handling and input validation.
--   Working with log files.
--   Bash scripting and command-line operations.
--   Connecting Python application logic to a visual interface.
-
-## Author
-
-**Frank Mugisha**
-
-African Leadership University (ALU)\
-Software Engineering -- Year 1, Trimester 2
