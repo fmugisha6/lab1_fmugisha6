@@ -142,7 +142,12 @@ def replace_sign(road_list, sign, index):
 # (signs_passed, length_m, START_NAME, END_NAME)
 # length_m is the number of segments times SEGMENT_M.
 def get_journey_summary(road_list):
-    pass
+    signs_passed = 0
+    for sign in road_list:
+        if sign != "road":
+            signs_passed += 1
+    length_m = len(road_list) * SEGMENT_M
+    return (signs_passed, length_m, START_NAME, END_NAME)
 
 
 if __name__ == "__main__":
