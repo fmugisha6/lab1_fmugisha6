@@ -29,24 +29,43 @@ road = [
 # TODO 1: Return True only if sign is text AND is "bus", "zebra",
 # or a number from 20 to 100 written as text (e.g. "80"). Otherwise False.
 def is_valid_sign(sign):
-    pass
+    if sign == "bus" or sign == "zebra":
+        return True
+    elif sign.isdigit():
+        number = int(sign)
+        if 20 <= number <= 100:
+            return True
+    return False
 
 
 # TODO 2: Return "bus", "zebra", "speed" (a number) or "road" (anything else).
 def get_sign_type(sign):
-    pass
+    if sign == "bus":
+        return "bus"
+    elif sign == "zebra":
+        return "zebra"
+    elif sign.isdigit() and 20 <= int(sign) <= 100:
+        return "speed"
+    else:
+        return "road"   
 
 
 # ==================== PART 2: TAKE ACTION ====================
 
 # TODO 3: If the sign is a speed sign, return its number as an int. Else return current_limit.
 def get_speed_limit(sign, current_limit):
-    pass
+    if sign.isdigit() and 20 <= int(sign) <= 100:
+        return int(sign)
+    else:
+        return current_limit
 
 
 # TODO 4: Return 0 while stop_timer is above 0, otherwise return limit.
 def get_target_speed(limit, stop_timer):
-    pass
+    if stop_timer > 0:
+        return 0
+    else:
+        return limit
 
 
 # TODO 5: Move speed ONE step towards target and return it.
