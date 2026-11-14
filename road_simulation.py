@@ -130,7 +130,11 @@ def insert_sign(road_list, sign, position):
 # TODO 9: Replace the sign at index with a new sign. Return False if index is not
 # from 0 to len(road_list) - 1. Otherwise replace it and return True.
 def replace_sign(road_list, sign, index):
-    pass
+    if 0 <= index < len(road_list):
+        road_list[index] = sign
+        return True
+    else:
+        return False
 
 
 # TODO 10: Summarise the journey. Use a loop to count the signs we pass
