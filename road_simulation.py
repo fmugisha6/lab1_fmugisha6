@@ -105,7 +105,16 @@ def count_signs(road_list):
 # TODO 7: Keep asking until the user types a whole number from low to high.
 # Use try/except for text that is not a number. Return the number as an int.
 def ask_for_number(question, low, high):
-    pass
+    while True:
+        user_input = input(question)
+        try:
+            number = int(user_input)
+            if low <= number <= high:
+                return number
+            else:
+                print(f"Please enter a number between {low} and {high}.")
+        except ValueError:
+            print("Invalid input. Please enter a whole number.")
 
 
 # TODO 8: Insert sign at position. Return False if position is not from 0 to len(road_list).
