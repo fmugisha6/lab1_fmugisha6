@@ -131,7 +131,7 @@ the driving sessions.
 ## Project Structure
 
 ``` text
-lab1_githubUsername/
+lab1_fmugisha6/
 │
 ├── road_simulation.py
 ├── engine.py
